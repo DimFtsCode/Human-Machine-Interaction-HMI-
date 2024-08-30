@@ -1,0 +1,65 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none; /* specifies that the logo does not become a target of pointer events (like mouse clicks) */
+}
+
+/* a media query that applies styles based on the user's system preferences.
+  In this case, it checks if the user has no preference for reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    /* The logo spin repeats infinitely, takes 20 seconds for each rotation,
+    and moves in a linear motion. */
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.header {
+  position: relative;
+  text-align: left;
+}
+
+.header h1 {
+  position: absolute;
+  color: rgb(53, 55, 56);
+  top: 0;
+  left: 0;
+  margin: 10px;
+  font-size: 1.5rem; /* Updated to use relative unit */
+}
+
+.homepage-img {
+  width: 100%;
+  max-height: 50vh;
+  object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,25 @@
+/* Footer.css */
+.footer {
+  background-color: var(--footer-background-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-item {
+  margin: 0 4rem;
+  color: #fff; /* Ensures the text is light-colored*/
+}
+
+.footer-item a {
+  color: var(--light-blue-on-hover); /* Inherits the color from .footer-item */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.footer-item a:hover {
+  text-decoration: underline; /* Underlines link on hover*/
+}
